@@ -1,0 +1,31 @@
+.events {
+    margin-top: 100px;
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        &-item {
+            width: 165px;
+            height: 55px;
+            background: #fff;
+            border: 1px solid #D6D6D6;
+            text-align: center;
+            padding: 17px 0;
+            color: #333333;
+            text-transform: uppercase;
+            font-weight: 500;
+            position: relative;
+            z-index: 5;
+            &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 165px;
+                height: 55px;
+                z-index: -1;
+                border: 1px solid #D6D6D6;
+                top: 8px;
+                left: 5px;
+            }
+        }
+    }
+}

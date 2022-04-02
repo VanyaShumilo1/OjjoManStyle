@@ -9,8 +9,12 @@
 
 * {
     font-family: 'Gilroy', sans-serif;
-    color: #FFF;
 }
+
+body {
+    color:#fff;
+}
+
 .container {
     max-width: 1110px;
     margin: 0 auto;
@@ -24,6 +28,7 @@ ul {
 @import "blocks/title";
 @import "blocks/buttons";
 @import "blocks/header";
+@import "blocks/events";
 
 
 @import "blocks/media";
