@@ -8,16 +8,22 @@
 @import "base/animations";
 
 * {
-    font-family: 'Girloy', sans-serif;
+    font-family: 'Gilroy', sans-serif;
+    color: #FFF;
 }
 .container {
-    max-width: 1140px;
+    max-width: 1110px;
     margin: 0 auto;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
 
 @import "blocks/title";
-
+@import "blocks/buttons";
+@import "blocks/header";
 
 
 @import "blocks/media";

@@ -1,3 +1,75 @@
 .header {
-    
+    height: 100vh;
+    width: 100%;
+    padding: 25px 0 30px 0;
+    background: url(../../img/bg/bgc.png) center center/cover no-repeat;
+    position: relative;
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__nav {
+        &-list {
+            display: flex;
+            justify-content: space-between;
+            text-decoration: none;
+            list-style: none;
+        }
+        &-item {
+            margin-right: 40px;
+            font-size: 14px;
+            line-height: 150%;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        
+    }
+    &__search {
+        position: relative;
+        &::before {
+            content: "";
+            width: 24px;
+            height: 24px;
+            display: block;
+            position: absolute;
+            left: -85%;
+            top: -7%;
+            z-index: 5;
+            background: url(../../img/header/gridicons_search.png);
+        }
+    }
+    &__title {
+        margin-top: 523px;
+    }
+    &__line {
+        height: 1px;
+        width: 100vw;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        bottom: 120px;
+    }
+    &__images {
+        display: flex;
+        max-width: 1110px;
+        position: absolute;
+        left: 50%;
+        bottom: 15px;
+        transform: translateX(-50%);
+        justify-content: space-between;
+        align-items: center;
+        &-item {
+            padding: 0 15px;
+            border-right: 1px solid #fff;
+        }
+        &-item:first-child {
+            padding-left: 0;
+        }
+        &-item:last-child {
+            padding-right: 0;
+            border-right: 0;
+        }
+    }
 }
