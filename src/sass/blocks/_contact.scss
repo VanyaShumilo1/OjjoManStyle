@@ -1,0 +1,22 @@
+.contact {
+    margin-top: 150px;
+    background: url(../../img/bg/salon.png) center center/cover no-repeat;
+    padding: 100px 0 120px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        max-width: 773px;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+    &__list {
+        
+        &-item {
+            padding-left: 20px;
+            list-style-image: url("../../img/contect/polygon.png");
+            font-size: 18px;
+            line-height: 25px;
+            margin-bottom: 15px;
+        }
+    }
+}
