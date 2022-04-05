@@ -36,8 +36,9 @@
         grid-template-columns: repeat(3,350px);
         grid-template-rows: repeat(2, 280px);
         gap: 30px;
-        &-item {
-            display: none;
+        display: none;
+        &-active {
+            display: grid;
         }
         &-photo {
             position: relative;
@@ -62,10 +63,4 @@
     color: #fff;
 }
 
-.active {
-    display: block;
-}
 
-.unactive {
-    display: none;
-}
