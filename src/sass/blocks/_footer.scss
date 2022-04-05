@@ -1,0 +1,85 @@
+.footer {
+    margin-top: 85px;
+    font-size: 14px;
+    line-height: 150%;
+    color: #333333;
+    &__title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #333333;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 255px);
+        column-gap: 30px;
+    }
+    &__content {
+        margin-top: 30px;
+    }
+    &__link {
+        display: block;
+        color:#333;
+        margin-top: 15px;
+    }
+    &__pay {
+        margin-top: 21px;
+        display: flex;
+        img {
+            margin-right: 20px;
+        }
+    }
+    &__list {
+        margin-left: 40px;
+        list-style: none;
+        &-item {
+            margin-top: 15px;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                top: 0;
+                left: -40px;
+                display: block;
+                background: url(../../img/footer/phone.svg);
+            }
+            &:last-child::before {
+                background: url(../../img/footer/email.svg) center center no-repeat; 
+            }
+        }
+    }
+    &__social {
+        margin-top: 23px;
+        display: flex;
+        &-item {
+            margin-right: 20px;
+        }
+    }
+    &__bottom {
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid #333333;
+        margin-top: 60px;
+        &-item {
+            a {
+                margin-top: 0;
+            }
+        }
+    }
+    &-bold {
+        text-decoration-line: underline;
+        font-weight: 600;
+    }
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background: #333;
+}
