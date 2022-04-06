@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #textbox{
+            max-height:200px;
+            width: 400px;
+            overflow:hidden;
+            margin-top:-20px;
+            position:relative;
+        }
+        #textbox:before{
+            content:"";
+            display:block;
+            height: 50%;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background:linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff 60%) center center/cover;
+        }
+    </style>
+</head>
+<body>
+    <select name="cars" id="cars">
+        <option value="" disabled selected></option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+
+    <div id="textbox">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+    </div>
+</body>
+</html>
