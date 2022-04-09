@@ -29,3 +29,6 @@ $('div.events__menu').on('click', '.events__menu-item:not(.menu_active)', functi
         .closest('div.container').find('div.events__images').removeClass('events__images-active').eq($(this).index()).addClass('events__images-active');
 });
 
+$('.advantages__readmore').on('click', function() {
+    $('.advantages__text').removeClass('advantages__text-overlay')
+})
