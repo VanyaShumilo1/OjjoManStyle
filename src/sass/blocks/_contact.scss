@@ -1,6 +1,6 @@
 .contact {
     margin-top: 150px;
-    background: url(../../img/bg/salon.png) center center/cover no-repeat;
+    background: url("../img/bg/salon.png") center center/cover no-repeat;
     padding: 100px 0 120px 0;
     &__wrapper {
         display: flex;
@@ -13,7 +13,7 @@
         
         &-item {
             padding-left: 20px;
-            list-style-image: url("../../img/contect/polygon.svg");
+            list-style-image: url("../img/contect/polygon.svg");
             font-size: 18px;
             line-height: 25px;
             margin-bottom: 15px;

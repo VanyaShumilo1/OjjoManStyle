@@ -32,3 +32,38 @@ $('div.events__menu').on('click', '.events__menu-item:not(.menu_active)', functi
 $('.advantages__readmore').on('click', function() {
     $('.advantages__text').removeClass('advantages__text-overlay')
 })
+
+const block = `<div class="suspension__catalog-items">
+<div class="suspension__catalog-item">
+    <div class="suspension__catalog-imgae"><img src="img/suspension/susp_item.png" alt="img"></div>
+    <div class="suspension__catalog-category">Подвеска</div>
+    <div class="suspension__catalog-brand">Dolce & Gabanna</div>
+    <button class="button suspension__button-price">175 000 $</button>
+</div>
+<div class="suspension__catalog-item">
+    <div class="suspension__catalog-imgae"><img src="img/suspension/susp_item.png" alt="img"></div>
+    <div class="suspension__catalog-category">Подвеска</div>
+    <div class="suspension__catalog-brand">Dolce & Gabanna</div>
+    <button class="button suspension__button-price">175 000 $</button>
+</div>
+<div class="suspension__catalog-item">
+    <div class="suspension__catalog-imgae"><img src="img/suspension/susp_item.png" alt="img"></div>
+    <div class="suspension__catalog-category">Подвеска</div>
+    <div class="suspension__catalog-brand">Dolce & Gabanna</div>
+    <button class="button suspension__button-price">175 000 $</button>
+</div>
+</div>`;
+
+$(".show-more").on("click", function() {
+    $(".suspension__catalog").append(block)
+})
+
+
+
+$('.header__burger').on('click', () => {
+    $('.menu').addClass('menu-active')
+})
+
+$('.burger-active').on('click', () => {
+    $('.menu').removeClass('menu-active')
+})
