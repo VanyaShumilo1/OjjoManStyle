@@ -29,7 +29,7 @@
         }
     }
     &__description {
-        padding: 50px 40px;
+        padding: 10px;
         border: 1px solid #D6D6D6;
     }
     &__name {
@@ -75,9 +75,19 @@
     }
     &__button {
         padding: 10px 20px;
+        &-addToCart {
+            background: #fff;
+            color: #333;
+            border: 1px solid #333;
+            margin-left: 15px;
+        }
     }
 }
 
+.border {
+    padding: 40px 30px;
+    border: 1px solid #D6D6D6;
+}
 
 .slesh {
     padding: 0 15px;
