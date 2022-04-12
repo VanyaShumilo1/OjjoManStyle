@@ -59,11 +59,17 @@ $(".show-more").on("click", function() {
 })
 
 
-
-$('.header__burger').on('click', () => {
-    $('.menu').addClass('menu-active')
+$('div.hamburger').on('click', () => {
+    if ($('div.hamburger').hasClass('hamburger-active')) {
+        $('.menu').removeClass('menu-active');
+        $('.hamburger-active').removeClass('hamburger-active');
+    } else {
+        $('.menu').addClass('menu-active');
+        $('.hamburger').addClass('hamburger-active');
+    }
 })
 
-$('.burger-active').on('click', () => {
-    $('.menu').removeClass('menu-active')
-})
+// $('.hamburger-active').on('click', () => {
+//     $('.menu').removeClass('menu-active')
+//     $('.hamburger-active').removeClass('hamburger-active')
+// })
