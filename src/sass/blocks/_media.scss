@@ -189,6 +189,21 @@
             row-gap: 30px;
         }
     }
+    .suspension {
+        &__filters {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: auto;
+            row-gap: 20px;
+        }
+        &__catalog {
+            grid-auto-rows: auto;
+            &-items {
+                grid-template-columns: 1fr;
+                grid-auto-rows: auto;
+            }
+        }
+    }
 }
 
 .hamburger{
